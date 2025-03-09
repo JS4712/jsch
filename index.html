@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduation</title>
+    <link rel="stylesheet" href="loginstyles.css" />
+    <link rel="stylesheet" href="afterlogin.css" />
+  </head>
+  <body>
+    <form class="login">
+      <input type="text" id="login-input" required />
+      <span>Your Name</span>
+      <i></i>
+    </form>
+    <div id="background" class="hidden">
+      <div class="container">
+        <div id="date" class="hidden"></div>
+        <div id="time" class="hidden"></div>
+        <div id="city" class="hidden"></div>
+        <div id="weather" class="hidden"></div>
+        <div id="temperature" class="hidden"></div>
+        <h1 class="hidden"></h1>
+      </div>
+
+      <div class="to-do-container">
+        <form class="toDoForm hidden">
+          <input type="text" required />
+          <span>To do?</span>
+          <i></i>
+        </form>
+        <ul id="toDoList" class="hidden"></ul>
+      </div>
+    </div>
+    <script src="JS/date.js"></script>
+    <script src="JS/time.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/to-do-list.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/backgroundimg.js"></script>
+  </body>
+</html>

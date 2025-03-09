@@ -1,0 +1,75 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.login input {
+  position: relative;
+  border: none;
+  background: none;
+  width: 100px;
+  height: 30px;
+  left: 100px;
+  bottom: 3px;
+  color: #f6ebeb;
+  text-align: center;
+  z-index: 9;
+  letter-spacing: 0.2rem;
+}
+
+.login input:focus {
+  outline: none;
+}
+
+.login input:valid ~ span,
+.login input:focus ~ span {
+  animation: 0.5s ease 0s forwards hiding;
+}
+
+@keyframes hiding {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.login span {
+  position: relative;
+  color: #f6ebeb;
+  height: 30px;
+  left: 5px;
+  animation: 1s ease 0s forwards showing;
+}
+
+@keyframes showing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.login i {
+  position: relative;
+  height: 2px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  z-index: 10;
+  right: 85px;
+  top: 10px;
+}
